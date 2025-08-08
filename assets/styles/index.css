@@ -8,12 +8,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 header {
     color: blanchedalmond;
-    background-color: burlywood;
+    background-color: rgb(223, 162, 83);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 60px;
     text-align: center;
@@ -26,18 +27,53 @@ main {
 }
 about-section {
     display: block;
-    background-color: blanchedalmond;
+    background-color: rgb(180, 132, 60);
     width: 80%;
     margin: 0 auto;
     padding: 40px;
     border-radius: 12px;
+    margin-bottom: 30px;
 }
 
 .texto-sobre-mim {
-    font-size: 40px
+    font-size: 25px
 }
 #titulo-sobre-mim {
-   font-size: 40px;
-   border-bottom: 2px solid black
+   font-size: 25px;
+   border-bottom: 2px solid black;
+   margin-bottom: 20px;
+} 
+
+#titulo-hobbies{
+   font-size: 25px;
+   border-bottom: 2px solid black;
+   margin-bottom: 20px;
+}
+meus-hobbies {
+    display: block;
+    background-color: rgb(180, 132, 60);
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
+li {
+    background-color: rgb(206, 153, 74);
+    padding: 12px;
+    border-left: 4px solid burlywood;
+    font-size: 16px;
+    min-width: 250px;
+}
+li:hover {
+    background-color: rgb(240, 204, 107);
+    transform: translateX(5px);
+    transition: all 0.3s ease;
 }
 
