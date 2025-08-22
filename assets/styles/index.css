@@ -77,3 +77,104 @@ li:hover {
     transition: all 0.3s ease;
 }
 
+contact {
+    display: block;
+    background-color: blanchedalmond;
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+ 
+contact h2 {
+    margin-bottom: 8px;
+    font-size: 25px;
+    text-align: center;
+}
+
+contact p {
+    text-align: center;
+    font-size: 25px;
+}
+
+contact a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 2px solid rgb(180, 132, 60);
+    border-radius: 25px;
+    display: inline-block;
+}
+
+contact a:hover {
+    background-color: rgba(185, 151, 57, 0.863);
+    color:bisque;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: rgba(185, 151, 57, 0.863);
+    color: blanchedalmond;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+#mudarPagina {
+    background-color: blanchedalmond;
+    text-align: center;
+    color: blanchedalmond;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 24px 16px;
+    }
+
+    .about-section
+    .meus-hobbies
+    .contact {
+        width: 100%;
+        padding: 24px;
+    } 
+
+    ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    li {
+        min-width: unset;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    header {
+        padding: 40px 20px;
+    }
+
+    header h1,
+    header p,
+    .contact p,
+    .contact h2 {
+        font-size: 20px;
+    }
+
+    .texto-sobre-mim {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
