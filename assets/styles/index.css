@@ -57,13 +57,13 @@ about-section {
 }
 #titulo-sobre-mim {
    font-size: 25px;
-   border-bottom: 2px solid black;
+   border-bottom: 2px solid rgb(240, 204, 107);
    margin-bottom: 20px;
 } 
 
 #titulo-hobbies{
    font-size: 25px;
-   border-bottom: 2px solid black;
+   border-bottom: 2px solid rgb(240, 204, 107);
    margin-bottom: 20px;
 }
 meus-hobbies {
