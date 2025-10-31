@@ -4,13 +4,35 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body {
+body.claro main{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex: 1;
+    background-color: blanchedalmond;
+    padding: 48px 38px;
+    width: 100%; 
 }
 
+body.escuro main{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex: 1;
+    padding: 48px 38px;
+    width: 100%; 
+}
+
+body.escuro about-section,
+body.escuro meus-hobbies,
+body.escuro contact,
+body.escuro header {
+  background-color: rgb(124, 19, 15);
+  color: #f2f2f2;
+}
 
 header {
     color: blanchedalmond;
@@ -19,12 +41,7 @@ header {
     padding: 60px;
     text-align: center;
 }
-main {
-    flex: 1;
-    background-color: blanchedalmond;
-    padding: 48px 38px;
-    width: 100%;  
-}
+
 about-section {
     display: block;
     background-color: rgb(180, 132, 60);
@@ -64,14 +81,27 @@ ul {
     display: flex;
     gap: 12px;
 }
-li {
-    background-color: rgb(206, 153, 74);
+body.escuro li {
+    background-color: rgb(124, 19, 15);
     padding: 12px;
     border-left: 4px solid burlywood;
     font-size: 16px;
     min-width: 250px;
 }
-li:hover {
+body.escuro li:hover {
+    background-color: rgb(240, 204, 107);
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+body.claro li {
+    background-color: rgb(180, 132, 60);
+    padding: 12px;
+    border-left: 4px solid burlywood;
+    font-size: 16px;
+    min-width: 250px;
+}
+body.claro li:hover {
     background-color: rgb(240, 204, 107);
     transform: translateX(5px);
     transition: all 0.3s ease;
@@ -99,8 +129,8 @@ contact p {
     font-size: 25px;
 }
 
-contact a {
-    color: blue;
+body.claro contact a {
+    color: rgb(180, 132, 60);
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -110,15 +140,40 @@ contact a {
     display: inline-block;
 }
 
-contact a:hover {
+body.claro contact a:hover {
     background-color: rgba(185, 151, 57, 0.863);
-    color:bisque;
+    color:white;
     transform: translateY(-2px);
 }
 
-footer {
+body.escuro contact a {
+    color: rgb(180, 132, 60);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 2px solid rgb(180, 132, 60);
+    border-radius: 25px;
+    display: inline-block;
+}
+
+body.escuro contact a:hover {
     background-color: rgba(185, 151, 57, 0.863);
-    color: blanchedalmond;
+    color:rgb(124, 19, 15);
+    transform: translateY(-2px);
+}
+
+body.escuro footer {
+    background-color: rgb(124, 19, 15);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+body.claro footer {
+    background-color: rgb(223, 162, 83);
+    color: white;
     text-align: center;
     padding: 2rem;
     width: 100%;
@@ -178,3 +233,33 @@ footer p {
         font-size: 1rem;
     }
 }
+
+h1 {
+    transition: color 0.4s;
+  }
+
+body.escuro  header button {
+    background-color: rgb(223, 162, 83);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+body.claro  header button {
+    background-color: blanchedalmond;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    font-weight: bold;
+  }
